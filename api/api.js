@@ -6,7 +6,7 @@ var reap=[]
  
 router.get('/diff', function(req, res) {
     const league = req.query.id;
-    fetchSession('avneetsinghgill246@gmail.com','Sony@vivo66').then((respp)=>{
+    fetchSession('username','password').then((respp)=>{
         
         fetchClassicLeague(respp,league).then(async(resp)=>{
             const cd=[...resp.new_entries.results,...resp.standings.results]
